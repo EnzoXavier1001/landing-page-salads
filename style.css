@@ -297,3 +297,50 @@ img {
 .home__btn a {
     margin-bottom: var(--mb-2);
 }
+
+/* sobre */
+.about__container {
+    padding: 0 2rem;
+}
+
+.about__chefs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: var(--mb-3);
+}
+
+.chefs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.chefs .img__chefs {
+    width: 180px;
+    transition: all 0.4s ease-in-out;
+}
+
+.chefs .img__chefs:hover {
+    transform: scale(1.1);
+}
+
+.chefs span {
+    font-size: var(--small-font-size);
+    color: var(--black-color);
+    margin-top: var(--mb-2);
+}
+
+.about__data {
+    margin-top: var(--mb-4);
+    background-color: var(--white-color);
+    padding: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 6px;
+}
+
+.about__data .section-text {
+    font-weight: var(--font-medium);
+}
