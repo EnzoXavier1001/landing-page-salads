@@ -362,7 +362,7 @@ img {
     transform: scale(1.1);
 }
 
-.card__img {
+.card__img img {
     border-radius: 8px 8px 0 0;
 }
 
@@ -415,4 +415,38 @@ img {
     padding: 1rem;
     cursor: pointer;
     transition: all 0.4s ease-in-out;
+}
+
+.card__cart:hover {
+    background-color: var(--first-color_alt)
+}
+
+/* delivery */
+.delivery {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('./img/bg-delivery.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.delivery__container {
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    border-radius: 6px;
+    padding: 1rem;
+}
+
+.delivery__data {
+    display: flex;
+    flex-direction: column;
+    border-radius: 6px;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 2rem;
+}
+
+.delivery__data h1 {
+    margin: 0;
 }
