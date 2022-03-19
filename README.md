@@ -22,7 +22,7 @@ O projeto foi desenvolvido com as seguintes tecnologias:
 ## 📷 Imagens
 
 <h1 align="center">
-    <img src="src/img/screenshot.png">
+    <img src="img/salad.gif">
 </h1>
 
 ## 📁 Como baixar o projeto
