@@ -20,6 +20,7 @@
     --h3-font-size: 1rem;
     --normal-font-size: 0.938rem;
     --small-font-size: 0.813rem;
+    --font-bold: 700;
 
     --font-light: 300;
     --font-medium: 400;
@@ -449,4 +450,110 @@ img {
 
 .delivery__data h1 {
     margin: 0;
+}
+
+/* contact */
+.contact__container {
+    padding: 1rem 2rem;
+}
+
+.contact__cta {
+    margin-bottom: var(--mb-3);
+}
+
+.contact__title {
+    font-weight: var(--font-bold);
+    font-size: var(--h3-font-size);
+    margin-bottom: var(--mb-2);
+}
+
+.contact__cta p {
+    font-weight: var(--font-medium);
+    font-size: var(--h3-font-size);
+    line-height: 28px;
+    margin-bottom: var(--mb-2);
+}
+
+.contact__cta a {
+    margin-bottom: var(--mb-2);
+}
+
+.contact__form .contact__title {
+    text-align: center;
+}
+
+.form__control {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.form__control label {
+    font-size: var(--small-font-size);
+}
+
+.form__control input, textarea {
+    font-size: var(--normal-font-size);
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    background-color: var(--white-color);
+    border: 2px solid var(--first-color);
+    margin-bottom: var(--mb-2);
+    outline: none;
+}
+
+.form__control textarea {
+    resize: none;
+    outline: none;
+    margin-bottom: var(--mb-6);
+}
+
+.form__control button {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+/* share */
+.share {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('./img/bg-compartilar.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+
+.share__container .section-title {
+    margin-top: var(--mb-3);
+}
+
+.share__container p {
+    font-weight: var(--font-bold);
+    font-size: var(--h2-font-size);
+}
+
+.share__social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: var(--mb-2);
+    margin-bottom: var(--mb-3);
+}
+
+.insta {
+    margin-top: var(--mb-1);
+    margin-right: var(--mb-1);
+}
+
+.share__social a, .insta {
+    font-weight: var(--font-medium);
+    font-size: var(--h2-font-size);
+    color: var(--first-color);
+}
+
+.share__social:hover > .insta, .share__social:hover > a {
+    color: var(--black-color);
 }
