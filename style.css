@@ -238,7 +238,7 @@ img {
     color: var(--first-color);
 }
 
-.nav__link:hover {
+.nav__link:hover, .active-link {
     padding-bottom: var(--mb-1);
     border-bottom: 1px solid var(--first-color);
 }
@@ -257,6 +257,41 @@ img {
 .nav__toggle:hover {
     background-color: var(--first-color);
     color: var(--white-color);
+}
+
+.scroll-header {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.scrollTop {
+    position: fixed;
+    right: 1rem;
+    bottom: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--first-color);
+    padding: 0.5rem;
+    border-radius: 50%;
+    z-index: var(--z-tooltip);
+    transition: all 0.4s ease-in-out;
+    visibility: hidden;
+}
+
+.scrollTop:hover {
+    background-color: var(--first-color_alt);
+    color: var(--first-color);
+}
+
+.scroll__top__icon {
+    font-size: 1.8rem;
+    color: var(--white-color);
+}
+
+/* show scroll top */
+.scroll-top {
+    visibility: visible;
+    bottom: 1rem;
 }
 
 /* home */
@@ -407,7 +442,7 @@ img {
     right: 0;
     bottom: 0;
     font-size: 1.8rem;
-    columns: var(--white-color);
+    color: var(--white-color);
     background-color: var(--first-color);
     border-radius: 6px 0px;
     display: flex;
@@ -557,3 +592,176 @@ img {
 .share__social:hover > .insta, .share__social:hover > a {
     color: var(--black-color);
 }
+
+/* footer */
+.footer__container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.company, .services, .info, .addres {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: var(--mb-5);
+}
+
+.company .logo {
+    padding: 0;
+}
+
+.company small {
+    font-size: var(--small-font-size);
+    color: var(--black-color);
+}
+
+.company .social__media a {
+    font-size: var(--h2-font-size);
+    color: var(--black-color);
+    border: .1rem solid var(--black-color);
+    padding: .1rem;
+    border-radius: 50%;
+} 
+
+.company .social__media a:hover {
+    color: var(--first-color);
+    border: .1rem solid var(--first-color);
+}
+
+.services a:hover, .info a:hover {
+    text-decoration: underline;
+}
+
+.footer__title {
+    font-weight: var(--font-bold);
+    font-size: var(--h3-font-size);
+    line-height: 29px;
+    color: var(--first-color);
+}
+
+.footer__subtitle {
+    font-size: var(--normal-font-size);
+    color: var(--black-color);
+}
+
+.footer p {
+    font-size: var(--small-font-size);
+    color: var(--black-color);
+    text-align: center;
+}
+
+/* media queries */
+@media (min-width: 576px) {
+    .home__img {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .cardapio__container {
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 2rem;
+    }
+
+    .footer__container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 768px) {
+    :root {
+        --big-font-size: 4rem;
+        --h1-font-size: 2.25rem;
+        --h2-font-size: 1.5rem;
+        --h3-font-size: 1.15rem;
+        --normal-font-size: 1rem;
+        --small-font-size: 0.875rem;
+    }
+
+    .logo {
+        margin: 0 2rem;
+    }
+
+    .home__container {
+        padding: 3rem 2rem;
+    }
+
+    .home__img {
+        width: 70%;
+    }
+
+    .container__form {
+        margin-bottom: var(--mb-6);
+    }
+}
+
+@media (min-width: 960px) {
+    .nav__list {
+        display: flex;
+        align-items: center;
+        padding: 0;
+    }
+
+    .nav__item {
+        margin-left: var(--mb-3);
+    }
+
+    .nav__toggle {
+        display: none;
+    }
+
+    .nav__Link {
+        font-size: var(--normal-font-size);
+        font-weight: var(--font-bold);
+    }
+
+    .home__container {
+        padding: 0;
+        height: calc(100vh - var(--header-height));
+        align-items: center;
+        grid-template-columns: 65% 35%;
+    }
+
+    .home__data {
+        margin-top: var(--mb-6);
+    }
+
+    .home__btn {
+        padding: 0;
+        display: flex;
+        align-items: center;
+    }
+
+    .home__btn a:first-child {
+        margin-right: var(--mb-2);
+    }
+
+    .home__img {
+        width: 100%;
+    }
+
+    .about__container {
+        padding: 0;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 2rem;
+        align-items: center;
+    }
+
+    .cardapio__container {
+        padding: 0;
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .contact__container {
+        padding: 0;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 1.5rem;
+        margin-top: var(--mb-2);
+    }
+
+    .footer__container {
+        padding: 0;
+        grid-template-columns: repeat(4, 1fr);
+    }
+}   
