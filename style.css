@@ -344,3 +344,75 @@ img {
 .about__data .section-text {
     font-weight: var(--font-medium);
 }
+
+/* cardapio */
+.cardapio__container {
+    padding: 1rem 4rem;
+}
+
+.card {
+    position: relative;
+    border-radius: 8px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+    margin: var(--mb-4) 0;
+    transition: all 0.4s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.1);
+}
+
+.card__img {
+    border-radius: 8px 8px 0 0;
+}
+
+.card__data {
+    height: 6rem;
+}
+
+.card__data h3 {
+    font-size: var(--h2-font-size);
+    font-weight: var(--font-bold);
+    color: var(--first-color);
+    margin-top: var(--mb-2);
+    margin-left: var(--mb-2);
+}
+
+.card__data .card__desc {
+    margin-left: var(--mb-2);
+}
+
+.card__data .card__desc small {
+    font-weight: var(--font-light);
+    font-size: var(--normal-font-size);
+    margin-top: var(--mb-2);
+    margin-bottom: var(--mb-4);
+}
+
+.card__price {
+    margin-top: var(--mb-2);
+}
+
+.card__price span {
+    font-weight: var(--font-bold);
+    font-size: var(--h2-font-size);
+    position: relative;
+    left: 1rem;
+    bottom: 1rem;
+}
+
+.card__cart {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    font-size: 1.8rem;
+    columns: var(--white-color);
+    background-color: var(--first-color);
+    border-radius: 6px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+}
